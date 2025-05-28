@@ -48,7 +48,7 @@ module "compute" {
   relay_instance_type = "t3.micro"
 
   subnet_ids          = module.network.private_subnet_ids
-  security_group_ids  = [aws_security_group.ecs.id]  # Asegúrate de definir este SG en dev/main.tf
+  security_group_ids  = [aws_security_group.ecs.id]  # Notas debo definir este SG en dev/main.tf :)
 
   ecs_cpu             = 512
   ecs_memory          = 2048
